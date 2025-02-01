@@ -2,7 +2,7 @@
 	"name": "svelte-microanimations",
 	"version": "0.0.1",
 	"description": "Microanimations for Svelte",
-	"author": "Navitech",
+	"author": "Danutu89",
 	"license": "MIT",
 	"private": false,
 	"scripts": {
@@ -15,6 +15,10 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint ."
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Danutu89/svelte-microanimations"
+	},
 	"files": [
 		"dist",
 		"!dist/**/*.test.*",
@@ -22,6 +26,9 @@
 		"README.md",
 		"package.json"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"sideEffects": [
 		"**/*.css"
 	],
