@@ -14,11 +14,11 @@ A lightweight library for Svelte that adds viewport-triggered transitions to you
 ## Installation
 
 ```bash
-npm install @navitech/microanimations
+npm install svelte-microanimations
 # or
-pnpm add @navitech/microanimations
+pnpm add svelte-microanimations
 # or
-yarn add @navitech/microanimations
+yarn add svelte-microanimations
 ```
 
 ## Usage
@@ -27,8 +27,8 @@ yarn add @navitech/microanimations
 
 ```svelte
 <script>
-	import { microanimation } from '@navitech/microanimations';
-	import { fadeSlide } from '@navitech/microanimations/transitions';
+	import { microanimation } from 'svelte-microanimations';
+	import { fadeSlide } from 'svelte-microanimations/transitions';
 	import { cubicOut } from 'svelte/easing';
 </script>
 
@@ -211,7 +211,7 @@ type MicroanimationParameters = {
 The library includes full TypeScript support with type inference for transition parameters:
 
 ```typescript
-import type { TransitionParamsMap } from '@navitech/microanimations';
+import type { TransitionParamsMap } from 'svelte-microanimations';
 
 // TypeScript will show available parameters for spinIn
 use:microanimation<'spinIn'>{{
@@ -231,8 +231,8 @@ use:microanimation<'spinIn'>{{
 
 ```svelte
 <script>
-	import { microanimation } from '@navitech/microanimations';
-	import { fadeSlide } from '@navitech/microanimations/transitions';
+	import { microanimation } from 'svelte-microanimations';
+	import { fadeSlide } from 'svelte-microanimations/transitions';
 	import { cubicOut } from 'svelte/easing';
 
 	let items = ['Item 1', 'Item 2', 'Item 3'];
@@ -259,7 +259,7 @@ use:microanimation<'spinIn'>{{
 
 ```svelte
 <script>
-	import { microanimation } from '@navitech/microanimations';
+	import { microanimation } from 'svelte-microanimations';
 	import { fade } from 'svelte/transition';
 	import { elasticOut } from 'svelte/easing';
 
