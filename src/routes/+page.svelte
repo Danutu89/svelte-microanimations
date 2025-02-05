@@ -70,7 +70,7 @@
 	<div class="card-container">
 		{#each Array(4) as _, i}
 			<div
-				class="card"
+				class="card transform"
 				use:microanimation={{
 					transition: fadeSlide,
 					params: { duration: 800, easing: bounceOut, axis: 'y', y: 10, x: 0 }
@@ -2754,7 +2754,7 @@
 		text-align: center;
 		will-change: transform, opacity;
 		backface-visibility: hidden;
-		transform: translateZ(0);
+		transform: translateZ(0) translateX(200px);
 	}
 
 	.card img {
